@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>QM Elections</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "container" style="width:500px">
+
+      <img id="maxLogo" src="../images/QM.png" style="width:450px" class="center">
+      <img id="miniLogo" src="../images/QM.png" style="width:200px" class="center">
+
+      <div class = "row">
+        <div class = "col-lg-12">
+        <hr/>
+        <div id="loginbox" class="text-center">
+          <br>
+            <p>Email: <input type="email" id="email"></p>
+            <p>Password: <input type="password" id="password"></p>
+            <button class ="login">Login</button>
+            </br>
+        </div>
+        <br>
+        <p id ="accountAddress" class = "text-center"></p>
+        <div id="popup-overlay" style="width:300px" class="center">
+        <div class ="popup-content">
+          <br>
+          <h2 class="center">Try Again</h2>
+          <p>The information you have entered is incorrect!</p>
+          <button class = "close">X</button>
+        </div>
+        </div>
+        <button id="displaylogout" class ="logout" style ="margin-right:200px">Logout</button>
+        <hr/>
+      </br>
+        <div id ="guidelines">
+            <b>THE ELECTIONS EXPLAINED: </b>
+            <br></br>
+            <p>The University runs elections so you can chose who
+              should be the next group of students to run and lead your Socities and
+              Union. There are lots of positions you could nominate yourself for
+              incluuding full-time paid positions and part-time voluntary positions.
+              Elected students then set the direction of the Student Union and Societies
+              to improve students' University experience.
+            </p>
+            <br>
+            <div class="text-center">
+              <button class="StudentUnion" style="margin-right:80px">Student Union</button>
+              <button class="Socities">Socities</button>
+            </div>
+        </div>
+        <div id ="content" style="display: none;">
+            <b class=center >STUDENT UNION CANDIDATES </b></br>
+          <table class = "table">
+            <thead>
+              <tr>
+                <th scope ="col">#</th>
+                <th scope ="col">Name</th>
+                <th scope ="col">Votes</th>
+                <th scope= "col" col width ="30">Elect</th>
+              </tr>
+            </thead>
+            <tbody id ="results"></tbody>
+          </table>
+          <hr/>
+            <div class = "text-center">
+              <button class="votingAbility" style="margin-right:80px">Vote</button>
+              <button class ="return">Return</button>
+            </div>
+
+<!-- Add form that students will need to use in order to cast -->
+        </div>
+
+        <div id ="secondTable" style="display: none;">
+            <b class=center >SOCIETIES CANDIDATES </b></br>
+          <table class = "table">
+            <thead>
+              <tr>
+                <th scope ="col">#</th>
+                <th scope ="col">Name</th>
+                <th scope ="col">Votes</th>
+                <th scope= "col" col width ="30">Elect</th>
+              </tr>
+            </thead>
+            <tbody id ="badmintonResults"></tbody>
+          </table>
+          <hr/>
+            <div class = "text-center">
+              <button class="votingAbility2" style="margin-right:80px">Vote</button>
+              <button class ="return">Return</button>
+            </div>
+
+      <!-- Add form that students will need to use in order to cast -->
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
